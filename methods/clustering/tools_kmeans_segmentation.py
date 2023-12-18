@@ -23,8 +23,8 @@ def kmeans_segmentation(image_path: str, k: int = 7) -> np.ndarray:
     - np.ndarray: Segmented image.
     """
     # Load the image
-    image = cv2.imread(image_path)  # noqa
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)  # noqa
+    image = cv2.imread(image_path)  
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)  
 
     # Preprocessing: reshape the image into a 2D array of pixels
     pixels = image.reshape((-1, 3))
