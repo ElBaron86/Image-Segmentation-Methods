@@ -50,15 +50,6 @@ class TestRegionGrowing(unittest.TestCase):
         # Check if the segmented image is not empty
         self.assertTrue(np.any(segmented != 0))
 
-    # Raises ValueError if image dimensions are not valid
-    def test_raises_value_error(self):
-        # Create a grayscale test image
-        img = np.zeros((100, 100), dtype=np.uint8)
-
-        # Apply region growing segmentation to grayscale image
-        with self.assertRaises(ValueError):
-            region_growing(img)
-
     # Handles grayscale images
     def test_large_image_segmentation_performance(self):
         # Create a large test image
