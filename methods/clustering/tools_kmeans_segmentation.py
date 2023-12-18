@@ -3,7 +3,7 @@
  # @ Create Time: 2023-12-18 19:23:18
  # @ Modified by:
  # @ Modified time: 
- # @ Description: 
+ # @ Description: Function to apply k-means segmentation on a colored image.
  '''
 
 # Modules importations
